@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nyusur</title>
+  <title>Nyusur - Lapor Kerusakan Jalan</title>
   <link rel="stylesheet" href="home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <header>
     <div class="logo">
-      <a href="home.html"><img src="Gambar/Logo1.png" alt="Logo" /></a>
-      <h2>Nyusur</h2>
+      <a href="home.html">
+        <img src="Gambar/Logo1.png" alt="Logo Nyusur" />
+        <h2>Nyusur</h2>
+      </a>
     </div>
     <nav>
       <a href="home.html">Home</a>
@@ -23,26 +31,43 @@
     </div>
   </header>
 
-  <main class="main-content">
-    <h3 class="welcome-text">Halo, Selamat Datang Di <span class="highlight">Nyusur</span></h3>
-
-    <section class="cards-container">
-      <div class="card main-card">
-        <p>Apakah Ada Kerusakan Jalan?<br>Buat Laporannya Yuk!</p>
-        <a href="input.html"><button class="btn" onclick="buatLaporan()">Buat Laporan Foto</button></a>
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Lihat Kerusakan Jalan?</h1>
+        <p>
+          Bantu kami memetakan dan memperbaikinya. Lapor sekarang hanya
+          dengan satu foto.
+        </p>
+        <a href="input.html" class="btn btn-hero">📸 Buat Laporan Foto</a>
       </div>
+    </section>
 
-      <div class="side-cards">
-            <a href="laporan.html" class="card side-card1">
-              <p>📜 Lihat Laporan Lainnya</p>
-            </a>
-            <a href="laporankita.html" class="card side-card1">
-              <p>📃 Pantau Laporan Kamu</p>
-            </a>
-          </div>          
+    <section class="features-section">
+      <h2 class="section-title">
+        Selamat Datang Di <span class="highlight">Nyusur</span>
+      </h2>
+      <p class="section-subtitle">
+        Pantau laporan yang sudah ada atau lihat status laporan Anda.
+      </p>
+      <div class="features-container">
+        <a href="laporan.html" class="card">
+          <div class="card-icon">📜</div>
+          <h3>Lihat Laporan Lainnya</h3>
+          <p>Lihat semua laporan kerusakan yang telah dikirim oleh pengguna.</p>
+        </a>
+        <a href="laporankita.html" class="card">
+          <div class="card-icon">📃</div>
+          <h3>Pantau Laporan Kamu</h3>
+          <p>Cek status dan progres perbaikan dari laporan yang Anda buat.</p>
+        </a>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Nyusur. Hak Cipta Dilindungi.</p>
+  </footer>
 
   <script src="home.js"></script>
 </body>
