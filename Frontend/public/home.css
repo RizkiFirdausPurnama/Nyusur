@@ -1,4 +1,4 @@
-/* --- PENGATURAN DASAR --- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,15 +7,15 @@
 
 body {
   font-family: 'Poppins', Arial, sans-serif;
-  background-color: #f4f7f6; /* Latar belakang abu-abu sangat muda */
+  background-color: #f4f7f6; 
   color: #333;
   line-height: 1.6;
 }
 
-/* --- HEADER (Sama seperti sebelumnya, tapi sedikit penyesuaian) --- */
+
 header {
   background-color: #ffffff;
-  padding: 20px 50px; /* Sedikit lebih banyak padding */
+  padding: 20px 50px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,21 +104,21 @@ nav a:hover::after {
   box-shadow: 0 4px 10px rgba(63, 81, 181, 0.3);
 }
 
-/* --- KONTEN UTAMA --- */
+
 main {
-  /* Hapus padding global, kita atur per bagian */
+  
   width: 100%;
 }
 
-/* --- HERO SECTION --- */
+
 .hero-section {
   padding: 80px 40px;
   text-align: center;
-  /* Gradient yang menarik */
+
   background: linear-gradient(135deg, #3f51b5 0%, #5a62ea 100%);
   color: #ffffff;
   position: relative;
-  /* Animasi fade-in */
+
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
 }
@@ -126,14 +126,13 @@ main {
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
-  /* Animasi slide-up */
   transform: translateY(20px);
   opacity: 0;
   animation: slideUp 0.8s 0.2s ease-out forwards;
 }
 
 .hero-section h1 {
-  font-size: 3.2rem; /* Lebih besar */
+  font-size: 3.2rem; 
   font-weight: 700;
   margin-bottom: 15px;
   line-height: 1.2;
@@ -155,18 +154,18 @@ main {
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  display: inline-block; /* Agar bisa diberi margin */
+  display: inline-block; 
 }
 .btn.btn-hero:hover {
   transform: translateY(-4px) scale(1.03);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* --- FEATURES SECTION --- */
+
 .features-section {
   padding: 60px 40px;
   max-width: 1200px;
-  margin: 0 auto; /* Tengah secara horizontal */
+  margin: 0 auto; 
   text-align: center;
 }
 
@@ -190,7 +189,6 @@ main {
 
 .features-container {
   display: grid;
-  /* 2 kolom di layar besar, 1 kolom di layar kecil */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
@@ -199,18 +197,18 @@ main {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 35px 30px;
-  text-align: left; /* Konten kartu rata kiri lebih rapi */
+  text-align: left; 
   border: 1px solid #e0e0e0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
   text-decoration: none;
   color: inherit;
   
-  /* Animasi fade-in berurutan */
+
   opacity: 0;
   transform: translateY(20px);
 }
-/* Menerapkan animasi saat body memiliki class 'loaded' (dari JS) */
+
 body.loaded .card:nth-of-type(1) {
   opacity: 1;
   transform: translateY(0);
@@ -247,7 +245,7 @@ body.loaded .card:nth-of-type(2) {
   line-height: 1.5;
 }
 
-/* --- FOOTER --- */
+
 .footer {
   text-align: center;
   padding: 30px 40px;
@@ -257,7 +255,7 @@ body.loaded .card:nth-of-type(2) {
   margin-top: 40px;
 }
 
-/* --- ANIMASI --- */
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -267,7 +265,7 @@ body.loaded .card:nth-of-type(2) {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* --- EFEK RIPPLE (Sama seperti sebelumnya) --- */
+
 .ripple {
   position: absolute;
   border-radius: 50%;

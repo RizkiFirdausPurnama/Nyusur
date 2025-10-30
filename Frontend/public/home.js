@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   
-  // 1. Memicu animasi 'fade-in' pada kartu-kartu
   document.body.classList.add('loaded');
 
   
-  // 2. Menambahkan efek 'ripple' (riak) pada semua tombol
   const buttons = document.querySelectorAll('.btn-hero, .auth-buttons a');
 
   buttons.forEach(button => {
