@@ -8,7 +8,7 @@ Proyek ini menggunakan **Firebase** sebagai backend untuk menangani autentikasi 
 
 ## 📸 Tampilan
 
-<img src="https://via.placeholder.com/800x450.png?text=Screenshot+Halaman+Utama+Nyusur" alt="Tampilan Halaman Utama Nyusur" width="100%">
+<img src="Frontend\public\Gambar\jalanberlubang1.jpg" alt="Tampilan Halaman Utama Nyusur" width="100%">
 
 ---
 
